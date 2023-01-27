@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h4>FILTROS</h4>
+        
+    Filtrar por: <input type="search" id="pesquisa" oninput="limpar()"> 
+        <button type="button" onclick="filtrar()">Filtrar</button>
+        <ul id="lista">
+            
+       
+       <li><input type="radio" name="bt" id="bt_makes">
+       <label for="bt_makes">MAKES</label></li>
+       <li> <input type="radio" name="bt" id="bt_cortes">
+       <label for="bt_cortes">CORTES</label></li>
+       <li><input type="radio" name="bt" id="bt_opcao3">
+       <label for="bt_opcao3">OPÇÃO 3</label></li>
+       <li><input type="radio" name="bt" id="bt_opcao4">
+       <label for="bt_opcao4">OPÇÃO 4</label></li>
+       </ul>
+        
+       <div>    
+           <ul>
+
+            <p>Filtrar por: </p>
+
+            <li><input type="radio" name="bt" id="bt_serbaratos">
+                <label for="bt_serbaratos">Serviços mais baratos</label></li>
+                
+            <li><input type="radio" name="bt" id="bt_serprocurados">
+                    <label for="bt_serbaratos">Serviços mais procurados</label></li>
+            
+            <li><input type="radio" name="bt" id="bt_sercaros">
+                        <label for="bt_serbaratos">Serviços mais caros</label></li>
+            
+
+            </ul></div>
+
+
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript">
+            function limpar() {
+                $('#lista li').show();
+            }
+            function filtrar() {
+                var termo = $('#pesquisa').val().toUpperCase();
+                $('#lista li').each(function() { 
+                   if($(this).html().toUpperCase().indexOf(termo) === -1) {
+                       $(this).hide();
+                   }
+                });
+            }
+        </script>
+</body>
+</html>
