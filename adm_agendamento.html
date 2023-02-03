@@ -24,42 +24,61 @@
         text-decoration: none;
       }
       
+      a {
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+      }
+
+      .vazia{
+          height: 49vh;
+        }
   </style>
 </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <img class="img-fluid" src="imagens/logo.png" alt="Logo de salão de beleza" width="50px" height="">
-          <a class="navbar-brand" href="#">Salão de Beleza</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-  
-            </ul>
-            <ul class="nav justify-content-end navbar-nav  mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="pag_inicial.html"><i class="bi bi-house-door-fill"></i> Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="pag_servico.html"><i class="bi bi-telephone-fill"></i>  Serviços</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="cadastro.html"><i class="bi bi-person-fill-add"></i> Cadastro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="pag_usuario.html"><i class="bi bi-person-circle"></i> Perfil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="pag_login.html"><i class="bi bi-box-arrow-in-right"></i>  Login</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <div class=" row">
+     
+      <div class="salão col-md-6 col-6 col-xl-8 ">
+        <p><a><img class="img-fluid" src="imagens/logo.png" alt="Logo de salão de beleza" width="50px" height="">Salão de Beleza
+        </a></p>
+      </div>
+     <div class="col-8 col-md-6 col-xl-4">
+       <div class="row">
+      <div class="home col-md-4 col-4 col-xl-2 ">
+        <p><a href="pag_icinial.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+        </svg> Home</a></p>
+      </div>
+
+      <div class="servico col-md-4 col-4 col-xl-2 ">
+        <p><a href="pag_.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+        </svg> Serviços</a></p>
+      </div>
+
+      <div class="cadastro col-md-4 col-4 col-xl-3 ">
+         <p><a href="cadastro"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+          <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+        </svg> Cadastro</a></p>
+      </div>
+
+      <div class="perfi col-md-4 col-4 col-xl-2">
+        <p><a href="pag_usuario.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg> Perfil</a></p></div>
+    
+      <div class="login col-md-4 col-4 col-xl-2">
+        <p><a href="Login.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+          <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+        </svg> Login</a></p>
+     </div>
+    </div>
+    </div>
+     
 
       
         <div class="container-fluid" id="casa">
@@ -145,7 +164,9 @@
             </div>
         </div>
 
-      
+        <div class="vazia">
+
+        </div>
       <div>
         <footer class="bg-dark text-white pt-1 pb-1">
             <div class="container text-center text-md-left">
